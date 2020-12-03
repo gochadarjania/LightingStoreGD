@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightingStore_GD", "LightingStore_GD\LightingStore_GD.csproj", "{AC70FD3E-A48C-4AB6-8892-2A45A1BBCD24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC70FD3E-A48C-4AB6-8892-2A45A1BBCD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC70FD3E-A48C-4AB6-8892-2A45A1BBCD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC70FD3E-A48C-4AB6-8892-2A45A1BBCD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC70FD3E-A48C-4AB6-8892-2A45A1BBCD24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA2F3615-6DF6-41A4-AD69-009D96E82DA0}
+	EndGlobalSection
+EndGlobal

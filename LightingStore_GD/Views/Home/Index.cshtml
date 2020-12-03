@@ -1,0 +1,43 @@
+﻿@model LightingStore_GD.Services.Models.Responses.GetProductsResponse
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <ul class="pagination">
+        @for (var i = 1; i <= Model.TotalCountPage; i++)
+        {
+            <li class="page-item @(i == Model.CurrentPage ? "active" : "") ">
+                <a class="page-link"
+                   asp-area=""
+                   asp-controller="Home"
+                   asp-action="Index"                   
+                   asp-route-searching="@Model.Search"
+                   asp-route-page="@i"
+                   >@i</a>
+            </li>
+        }
+    </ul>
+</div>
+
+@foreach (var item in Model.Products)
+{
+    <div class="card-deck text-center float-left col-md-3 col-md-offset-3">
+        <div class="card">
+
+            <a asp-controller="Home" asp-action="ProductDetail" asp-route-id="@item.ProductId">
+                <img src="@item.ImgUrl" class="card-img-top" alt="...">
+            </a>
+
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <h6 class="card-title">@item.Price</h6>
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
